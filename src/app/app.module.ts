@@ -8,12 +8,15 @@ import { NavComponent } from './pokemon/template/nav/nav.component';
 
 //Modulos
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
+import { HomeComponent } from './views/home/home.component';
+import { RegisterMainComponent } from './views/register-main/register-main.component';
 
 
 @NgModule({
@@ -21,7 +24,9 @@ import { BrowserModule } from '@angular/platform-browser';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    NavComponent
+    NavComponent,
+    HomeComponent,
+    RegisterMainComponent
   ],
   imports: [
     BrowserModule,
@@ -30,6 +35,8 @@ import { BrowserModule } from '@angular/platform-browser';
     MatToolbarModule,
     MatListModule,
     MatSidenavModule,
+    MatCardModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
