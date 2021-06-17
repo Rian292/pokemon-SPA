@@ -17,6 +17,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { HomeComponent } from './views/home/home.component';
 import { RegisterMainComponent } from './views/register-main/register-main.component';
+import { PokemonsComponent } from './views/poke/pokemons/pokemons.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { RegisterMainComponent } from './views/register-main/register-main.compo
     FooterComponent,
     NavComponent,
     HomeComponent,
-    RegisterMainComponent
+    RegisterMainComponent,
+    PokemonsComponent
   ],
   imports: [
     BrowserModule,
